@@ -1,0 +1,14 @@
+server:
+  port: 1111
+
+eureka:
+  instance:
+    hostname: server1
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://server2:2222/eureka/,http://server3:3333/eureka/
+spring:
+  application:
+    name: eureka
